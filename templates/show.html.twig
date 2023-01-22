@@ -1,0 +1,40 @@
+
+{% extends "base.html.twig" %}
+
+{% block title %}index{% endblock %}
+
+{% block body %}
+    <h1>Index</h1>
+    <p class="important">
+        Welcome on my awesome homepage.
+    </p>
+  
+    <div class="row my-5">
+        <div class="col-md-8 mx-auto">
+            <div class="card">
+            
+    <table class="table" border="1">
+       <thead>
+           <tr>
+              <th>ID</th>
+              <th>Titre</th>
+              <th>Description</th>
+           </tr>
+       </thead>
+       <tbody>
+         
+             <tr>
+               <td scope="row">{{show_task.id}}</td>
+                  <td>{{show_task.title}}</td>
+                  <td>{{show_task.body}}</td>
+                  <td></td>
+             </tr>
+           
+           
+            
+        </tbody>
+    </table>
+            </div>
+        </div>
+    </div>
+{% endblock %}
